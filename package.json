@@ -1,0 +1,20 @@
+{
+  "name": "@deepcodr/reactasciibanner",
+  "version": "1.0.0",
+  "description": "Provides custom ascii banner for your application while running in console",
+  "main": "createbanner.js",
+  "scripts": {
+    "preinstall": "node createbanner.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Deepcodr",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deepcodr/ReactAsciiBanner.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Deepcodr/ReactAsciiBanner/issues"
+  },
+  "homepage": "https://github.com/Deepcodr/ReactAsciiBanner#readme"
+}
