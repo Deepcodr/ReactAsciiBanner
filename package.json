@@ -1,7 +1,15 @@
 {
   "name": "@deepcodr/reactasciibanner",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Provides custom ascii banner for your application while running in console",
+  "keywords": [
+    "react",
+    "deepcodr",
+    "deepcodr react ascii banner",
+    "react ascii banner",
+    "react banner",
+    "ascii banner"
+  ],
   "files": [
     "bin",
     "config",
