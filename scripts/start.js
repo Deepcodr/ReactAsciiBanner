@@ -1,3 +1,9 @@
+/**
+ * Copyright (c) 2024-present, Deepcodr.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
 'use strict';
 
@@ -9,8 +15,6 @@ const fs = require('fs');
 const chalk = require('../util/chalk');
 const checkRequiredFiles = require('../util/checkFiles');
 
-// const env = getClientEnvironment(paths.publicUrlOrPath.slice(0, -1));
-// const useYarn = fs.existsSync(paths.yarnLockFile);
 const isInteractive = process.stdout.isTTY;
 
 
@@ -20,10 +24,6 @@ const paths = require('../config/paths');
 
 const appDirectory = fs.realpathSync(process.cwd());
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
-
-// scriptPath = resolveApp("node_modules/react-scripts/scripts/start.js");
-// bannerPath = resolveApp("src/ReactBannerArt.txt");
-
 
 if (!checkRequiredFiles([paths.startScriptPath, paths.bannerTextPath])) {
     process.exit(1);
@@ -63,17 +63,3 @@ child.stdout.on('data', (data) => {
 child.stderr.on('data', (data) => {
     console.log(`${chalk.cyan(data)}`);
 });
-
-// ['SIGINT', 'SIGTERM'].forEach(function (sig) {
-//     process.on(sig, function () {
-//     devServer.close();
-//     process.exit();
-//     });
-// });
-// })
-// .catch(err => {
-// if (err && err.message) {
-//     console.log(err.message);
-// }
-// process.exit(1);
-// });
