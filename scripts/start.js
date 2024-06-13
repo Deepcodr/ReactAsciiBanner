@@ -25,19 +25,17 @@ const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
 // bannerPath = resolveApp("src/ReactBannerArt.txt");
 
 
-// if (!checkRequiredFiles([paths.startScriptPath, paths.bannerTextPath])) {
-//     process.exit(1);
-// }
+if (!checkRequiredFiles([paths.startScriptPath, paths.bannerTextPath])) {
+    process.exit(1);
+}
 
-// var banner;
+var banner;
 
-// try {
-//     banner = fs.readFileSync(paths.bannerTextPath);
-// } catch (err) {
-//     throw new Error(err + "\n\nReactBannerArt.txt not found !\n");
-// }
-
-var banner = "deepak";
+try {
+    banner = fs.readFileSync(paths.bannerTextPath);
+} catch (err) {
+    throw new Error(err + "\n\nReactBannerArt.txt not found !\n");
+}
 
 const child = spawn('node', [paths.startScriptPath]);
 

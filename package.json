@@ -1,6 +1,6 @@
 {
   "name": "@deepcodr/reactasciibanner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provides custom ascii banner for your application while running in console",
   "files": [
     "bin",
